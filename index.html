@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aiming High :- Advanced</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="homePage">
+        <h1>Welcome to <span class="title-highlight">Aiming High</span></h1>
+        <p>Experience the challenge of projectile motion with obstacles, levels, and enhanced graphics.</p>
+        <p><strong>Created By:</strong></p>
+        <ul>
+            <li>Jyotiransh</li>
+            <li>Aviral</li>
+            <li>Ramesh</li>
+            <li>Mayank</li>
+            <li>Neev</li>
+            <li>Satyam</li>
+            <li>Suhani</li>
+            <li>Anjali</li>
+        </ul>
+        <button id="startButton">Start Game</button>
+    </div>
+
+    <div id="gamePage" style="display: none;">
+        <h2>Aiming High :- Advanced</h2>
+            <canvas id="gameCanvas"></canvas>
+            <div id="controls">
+                <label for="angle">Angle (degrees):</label>
+                <input type="number" id="angle" value="45" min="0" max="90">
+                <label for="velocity">Velocity:</label>
+                <input type="number" id="velocity" value="50" min="0">
+                <button id="launchButton">Launch</button>
+            </div>
+            <div id="info">
+                <p id="level">Level: 1</p>
+                <p id="displacement">Displacement: 0 m</p>
+                <p id="hits">Hits: 0</p>
+                <p id="score">Score: 0</p>
+            </div>
+        </div>
+        <button id="homeButton">Back to Home</button>
+    </div>
+    <audio id="launchSound" src="launch.mp3"></audio>
+    <audio id="hitSound" src="hit.mp3"></audio>
+    <script src="script.js"></script>
+</body>
+</html>
